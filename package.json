@@ -1,0 +1,19 @@
+{
+  "name": "next-headless-cms-proxy",
+  "version": "1.0.0",
+  "workspaces": [
+    "strapi",
+    "nextjs"
+  ],
+  "scripts": {
+    "strapi:dev": "ENV_PATH=../.env.development npm run dev --workspace=strapi",
+    "strapi:start:prod": "ENV_PATH=../.env npm run start --workspace=strapi"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@strapi/strapi": "^5.12.3",
+    "better-sqlite3": "^11.9.1"
+  }
+}
